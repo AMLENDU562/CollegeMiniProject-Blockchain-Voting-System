@@ -7,8 +7,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 70vh;
-  background: url('../assets/eth5.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+h1{
+  color:#000000;
 }
 
 .container {
@@ -25,13 +28,11 @@ body {
 
 h1 {
   font-size: 32px;
-  color: #ffffff;
   margin-bottom: 30px;
 }
 
 legend {
   font-size: 24px;
-  color: #ffffff;
   margin-bottom: 20px;
 }
 

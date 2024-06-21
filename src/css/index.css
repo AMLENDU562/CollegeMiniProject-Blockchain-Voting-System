@@ -7,7 +7,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 60vh;
-    background: url('../assets/eth5.jpg') no-repeat center center fixed;
     background-size: cover;
   }
   
@@ -25,23 +24,15 @@ body {
   
   h1 {
     font-size: 32px;
-    color: #ffffff;
     margin-bottom: 30px;
   }
 
   h2 {
     font-size: 25px;
-    color: #ffffff;
     margin-bottom: 25px;
   }
   
-  h3 {
-    color: #ffffff;
-  }
-
-  p {
-    color: #ffffff;
-  }
+ 
   
   .table {
     width: 100%;
@@ -54,12 +45,10 @@ body {
   
   th {
     font-size: 18px;
-    color: #ffffff;
   }
   
   td {
     font-size: 16px;
-    color: #ffffff;
     row-gap: 100%;
   }
   
@@ -67,7 +56,6 @@ body {
     width: 40%;
     padding: 12px;
     background-color: #198a7b;
-    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-size: 19px;
@@ -89,7 +77,6 @@ body {
   
   #accountAddress {
     font-size: 18px;
-    color: #ffffff;
     margin-top: 20px;
   }
   
