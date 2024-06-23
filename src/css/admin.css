@@ -7,73 +7,89 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  background-color: #f0f0f0; /* Light gray background */
   background-size: cover;
 }
 
-h1{
-  color:#000000;
+h1 {
+  color: #000000;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
 
 .container {
-  width: 1100px;
-  height: 150px;
+  width: 100%;
   max-width: 1100px;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75); /* Slightly darker background */
   padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.1);
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   text-align: center;
   margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 legend {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #ffffff; /* White color for better contrast */
 }
 
 .table {
   width: 80%;
+  margin: 0 auto; /* Center the table horizontally */
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.650);
+  background-color: rgba(255, 255, 255, 0.75); /* Slightly darker background */
   border-radius: 5px;
+  border-collapse: collapse; /* Ensures no spacing between table cells */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 th {
   font-size: 18px;
   color: #000000;
+  padding: 12px; /* Added padding for better spacing */
+  background-color: #f5f5f5; /* Light background color for header */
 }
 
 td {
   font-size: 16px;
   color: #000000;
+  padding: 10px; /* Added padding for better spacing */
+  background-color: #ffffff; /* White background for table cells */
 }
 
 input[type="text"],
 input[type="date"] {
   width: 90%;
   padding: 12px;
-  border: 50px;
+  border: 1px solid #ccc; /* Light border for better visibility */
   border-radius: 5px;
   font-size: 18px;
-  color: #000000;
-  background-color: rgb(255, 255, 255);
+  color: #333; /* Darker text color */
+  background-color: #fff;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #198a7b; /* Match border color with button */
+  outline: none;
 }
 
 input[type="submit"] {
   width: 30%;
   padding: 12px;
   background-color: #198a7b;
-  color: #ffffff;
+  color: #ffffff; /* White text color */
   border: none;
   border-radius: 5px;
   font-size: 19px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin: 0 auto; /* Center the button */
 }
 
 input[type="submit"]:hover {
@@ -82,6 +98,7 @@ input[type="submit"]:hover {
 
 input[type="submit"]:focus {
   outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 139, 130, 0.5); /* Focus ring for accessibility */
 }
 
 input[type="submit"]:active {
@@ -97,18 +114,12 @@ input[type="submit"]:active {
   .container {
     width: 90%;
   }
-}
-.container {
-  /* ... */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.table {
-  width: 80%;
-  margin: 0 auto; /* Add this line to center the table horizontally */
-  margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.650);
-  border-radius: 5px;
+  .table {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  input[type="submit"] {
+    width: 100%; /* Full width on smaller screens */
+  }
 }
